@@ -1,0 +1,8 @@
+﻿  DH_protocol.cpp
+c:\work\diff_quation\diffie-hellman__int64\diffie-hellman__int64\dh_protocol.cpp(9): warning C4552: %: оператор не имеет результата; требуется оператор с побочным действием
+  Создание кода...
+c:\work\diff_quation\diffie-hellman__int64\diffie-hellman__int64\dh_protocol.cpp(11): warning C4715: DH_protocol::fast_pow: значение возвращается не при всех путях выполнения
+  Пропуск... (изменения не обнаружены)
+  main.cpp
+  diffie-hellman__int64.vcxproj -> C:\WORK\diff_quation\diffie-hellman__int64\Debug\diffie-hellman__int64.exe
+  diffie-hellman__int64.vcxproj -> C:\WORK\diff_quation\diffie-hellman__int64\Debug\diffie-hellman__int64.pdb (Partial PDB)
