@@ -9,14 +9,14 @@ __int64 generate_degree() {
 	return r;
 }
 
-void check(DH_protocol& P,__int64 A, __int64 a) {
+void check_DHalgorithm(DH_protocol& P,__int64 A, __int64 a) {
 	__int64 b = generate_degree();
 	__int64 B = P.getOwnKey(b);
 
 	__int64 K1 = P.powSomeoneKey(B, a);
 	__int64 K2 = P.powSomeoneKey(A, b);
 
-	if (K1 == K2) { std::cout << "NORMALNA"; }
+	if (K1 == K2) { std::cout << "Secret keys are equivalent" << std::endl; }
 }
 
 
@@ -25,5 +25,5 @@ void main() {
 	DH_protocol P(g,p);
 	__int64 a = generate_degree();
 	__int64 A = P.getOwnKey(a);
-	check(P,A,a);
+	check_DHalgorithm(P,A,a);
 }

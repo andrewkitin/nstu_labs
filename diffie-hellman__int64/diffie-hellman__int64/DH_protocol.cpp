@@ -6,7 +6,8 @@ __int64 DH_protocol::fast_pow(__int64 a, __int64 n) {
 		return (fast_pow(a, n-1)*a)%p;
 	}
 	else {
-		(fast_pow(a, n / 2)*a) % p;
+		__int64 half = fast_pow(a, n / 2);
+		return (half*half) % p;
 	}
 }
 
